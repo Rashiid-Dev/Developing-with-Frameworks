@@ -1,7 +1,9 @@
 <html>
 <body>
 	<h1>Create a new menu item</h1>
-
+		<head>
+			<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+		</head>
 	<form actions="{{ url_for('newMenuItem', restaurant_id = restaurant_id)}}"
 	method = 'post'>
 
